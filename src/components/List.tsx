@@ -1,0 +1,27 @@
+import React from "react"
+
+import { geAllFromProps } from "./utils"
+
+export interface ListProps {
+  ordered?: boolean
+  className?: string
+  children?: any
+  style?: any
+}
+
+export function List(props: ListProps) {
+  const { ordered, style, children } = props
+  const className = geAllFromProps(props, "mb-4" + ordered ? "" : "list-decimal")
+  if (ordered) {
+    return (
+      <ol className={className} style={style}>
+        {children}
+      </ol>
+    )
+  }
+  return (
+    <ul className={className} style={style}>
+      {children}
+    </ul>
+  )
+}

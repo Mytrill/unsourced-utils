@@ -1,0 +1,33 @@
+{
+  "name": "unsourced-utils",
+  "version": "0.1.0",
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "tsc": "tsc --noEmit"
+  },
+  "dependencies": {
+    "classnames": "2.2.6",
+    "firebase": "7.9.1",
+    "formik": "2.1.2",
+    "is-mobile": "2.1.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "tailwindcss": "1.2.0",
+    "unstated-next": "1.1.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.10.0",
+    "react-dom": ">=16.10.0",
+    "next": ">=9.0.0"
+  },
+  "devDependencies": {
+    "next": "9.2.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "typescript": "3.8.2"
+  }
+}
